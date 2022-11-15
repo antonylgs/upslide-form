@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>UpSlide Mockup - Antony Langlois</title>
+  </head>
+  <body>
+    <!--Form - left big block-->
+    <form action="#" method="post" id="order-form">
+      <!--Order information-->
+      <div id="order-information">
+        <h2>Order Information</h2>
+        <hr />
+
+        <div class="form-selection">
+          <span>
+            <label for="offer">Offer</label>
+            <input type="text" name="offer" id="offer" />
+          </span>
+
+          <span>
+            <label for="number">Select a number</label>
+            <select name="number" id="number">
+              <option style="display: none"></option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+          </span>
+        </div>
+      </div>
+      <!--End Order Information-->
+
+      <!--Customer Information-->
+      <div id="customer-information">
+        <h2>Customer Information</h2>
+        <hr />
+        <div class="form-selection">
+          <span>
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="Name" />
+          </span>
+
+          <span>
+            <label for="phone-number">Phone</label>
+            <input type="number" name="phone-number" id="phone-number" />
+          </span>
+
+          <span>
+            <label for="company">Company</label>
+            <input type="text" name="company" id="company" />
+          </span>
+
+          <span>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option style="display: none"></option>
+              <option value="paris">Paris</option>
+              <option value="london">London</option>
+              <option value="new-york">New York</option>
+              <option value="berlin">Berlin</option>
+              <option value="singapore">Singapore</option>
+            </select>
+          </span>
+
+          <span>
+            <label for="vat-number">VAT Number</label>
+            <input type="text" name="vat-number" id="vat-number" />
+          </span>
+        </div>
+      </div>
+      <!--End Customer Information-->
+    </form>
+    <!--End Form-->
+    <!--Order Summary - Top Right Block-->
+    <aside id="order-summary">
+      <h2>Order Summary</h2>
+      <hr />
+      <ul>
+        <li>
+          <span class="item-name">Licenses x1</span
+          ><span class="item-price">548,00£</span>
+        </li>
+        <li>
+          <span class="item-name">VAT (20%)</span
+          ><span class="item-price"></span>109,60£
+        </li>
+      </ul>
+      <hr />
+      <p id="total-amount"><span>Total Amount*</span><span>657,60£</span></p>
+      <p class="little">* Annual billing</p>
+      <div id="submit">
+        <button id="submit-btn">SUBMIT ORDER</button>
+      </div>
+      <p class="little terms">
+        By submitting this form, you have to read and agree to the Privacy
+        Policy and our Terms.
+      </p>
+    </aside>
+    <!--End Order Summary-->
+    <!--FAQ - Bottom Right Block-->
+    <div id="faq">
+      <div id="faq-top">F.A.Q</div>
+      <aside>
+        <h3 class="question">When will I get access to UpSlide</h3>
+        <p class="answer">
+          After payment confirmation, our team will set your account up so that
+          you can get UpSlide in the next 2 business days.
+        </p>
+      </aside>
+      <!--Dots under FAQ-->
+      <div id="circles">
+        <span class="circle"></span>
+        <span class="circle selected"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+    </div>
+    <!--End FAQ-->
+    <script src="script.js"></script>
+  </body>
+</html>

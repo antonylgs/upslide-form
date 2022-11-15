@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/*Delete padding and margin of web browser*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*html & body*/
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 80%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 65% 35%;
+  gap: 4vh;
+  grid-template-areas: "form summary" "form faq";
+  background-color: rgb(236, 236, 236);
+  font-family: "Roboto", sans-serif;
+}
+
+/*General settings*/
+h2,
+#total-amount,
+.question {
+  color: rgb(63, 63, 63);
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: grey;
+}
+
+/*Defining grid areas name of elements*/
+#order-form {
+  grid-area: form;
+}
+
+#order-summary {
+  grid-area: summary;
+}
+
+#faq {
+  grid-area: faq;
+}
+
+/*Form - left big block*/
+#order-form,
+#order-summary {
+  background-color: white;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+}
+
+/*Input & Labels*/
+input,
+select {
+  border: none;
+  border-radius: 2px;
+  padding: 8px;
+  height: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+select {
+  height: 45px;
+}
+
+label {
+  display: block;
+  color: grey;
+  margin-bottom: 12px;
+}
+
+/* disposition of labels and inputs */
+.form-selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-selection span {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#customer-information .form-selection {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+
+#customer-information .form-selection span {
+  width: 100%;
+}
+
+/* Order summary */
+#order-summary ul {
+  list-style: none;
+}
+
+#order-summary li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#total-amount {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.little {
+  font-size: 12px;
+}
+
+/* submit order button*/
+#submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 36px 0px;
+}
+#submit-btn {
+  color: white;
+  width: 22vh;
+  height: 6vh;
+  border: none;
+  background: rgb(236, 89, 62);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 89, 62, 1) 0%,
+    rgba(235, 83, 101, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.terms {
+  text-align: justify;
+}
+
+/*FAQ*/
+#faq aside {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 18px;
+}
+#faq-top {
+  background-color: rgb(225, 225, 225);
+  padding: 4px 12px;
+  width: fit-content;
+  font-weight: 700;
+}
+.question {
+  margin-bottom: 24px;
+}
+
+/*Dots under FAQ*/
+#circles {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.selected {
+  background-color: black;
+}
